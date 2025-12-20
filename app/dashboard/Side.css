@@ -1,0 +1,9 @@
+.sidebar {
+    /* Your sidebar styles */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    visibility: hidden; /* This will hide the element but keep it in the DOM */
+  }
