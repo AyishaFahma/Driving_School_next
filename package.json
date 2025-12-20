@@ -1,0 +1,62 @@
+{
+  "name": "drivesss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "overrides": {
+    "prosemirror-model": "1.19.3"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^44.1.0",
+    "@ckeditor/ckeditor5-react": "^9.4.0",
+    "@headlessui/react": "^2.2.0",
+    "@radix-ui/react-popover": "^1.1.6",
+    "@tiptap/core": "^2.6.6",
+    "@tiptap/pm": "^2.11.2",
+    "@tiptap/react": "^2.11.2",
+    "@tiptap/starter-kit": "^2.11.2",
+    "@yudiel/react-qr-scanner": "^2.1.0",
+    "autoprefixer": "^10.4.20",
+    "bcryptjs": "^2.4.3",
+    "flowbite": "^2.5.2",
+    "flowbite-typography": "^1.0.5",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.12.1",
+    "html5-qrcode": "^2.3.8",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^3.0.3",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.475.0",
+    "next": "^15.1.5",
+    "next-auth": "^4.24.11",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-qr-code": "^2.0.15",
+    "react-select": "^5.10.0",
+    "react-toastify": "^11.0.3",
+    "react-tooltip": "^5.28.0",
+    "slate": "^0.112.0",
+    "slate-react": "^0.112.0",
+    "webrtc-adapter": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.4.49",
+    "source-map-loader": "^5.0.0",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5"
+  }
+}

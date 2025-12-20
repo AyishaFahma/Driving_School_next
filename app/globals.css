@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+  }
+
+  table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
+    table-layout: fixed;
+  }
+  th {
+    border-bottom:1px solid black;
+    padding: 8px;
+  }
+ td {
+    border: 1px 0px 1px 0px solid black;
+    padding: 8px;
+  }
+
+  .is-hoverable {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .whitespace-nowrap {
+    white-space: normal !important;
+  }
+  .printnone {
+    display: none !important;
+  }
+  .printable, .printable * {
+    display: block !important;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+td ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+td ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+[contenteditable="true"] ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+[contenteditable="true"] ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+  /* Hide the default header and footer */
+  @page {
+    margin: 0;
+  }
+  
+  body {
+    margin: 20px; /* Add some margin for printed content */
+  }
+
+  /* Hide the URL and other unwanted elements */
+  .no-print {
+    display: none;
+  }
+
+  /* Custom header for print */
+  /* .print-header {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .print-date-time {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  } */
+  .print-date-time {
+    /* Additional styles for date if needed */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .print-header {
+    /* Additional styles for header if needed */
+    font-size: 16px; /* Adjust font size */
+   
+  }
+}
