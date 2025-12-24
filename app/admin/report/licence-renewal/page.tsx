@@ -507,7 +507,7 @@ export default function LicenceRenewal() {
                                                                 Total Amount: {item.amount}
                                                             </p>
                                                             <p className="text-slate-400 dark:text-navy-300">
-                                                                Pay Amount: {item.pay_amount}
+                                                                Paid Amount: {item.pay_amount}
                                                             </p>
                                                             <p className="text-slate-400 dark:text-navy-300">
                                                                 Due Amount: {item.due_amount}
